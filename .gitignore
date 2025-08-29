@@ -1,0 +1,15 @@
+node_modules
+dist
+build
+coverage
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+# Go
+/apps/server-go/bin
+# Rust
+/target
+# Docker
+docker-data

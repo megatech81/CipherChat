@@ -1,0 +1,24 @@
+{
+  "name": "cipherchat-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "packages/crypto",
+    "packages/proto",
+    "packages/ui",
+    "packages/utils"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@cipherchat/web",
+    "build": "npm run build --workspace=@cipherchat/web",
+    "lint": "eslint . --ext .ts,.tsx --max-warnings=0",
+    "typecheck": "tsc -b",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.5.0"
+  }
+}
