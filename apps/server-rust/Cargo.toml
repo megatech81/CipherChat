@@ -1,0 +1,16 @@
+[package]
+name = "cipherchat-server"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1.37", features = ["rt-multi-thread", "macros"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tower = "0.5"
+futures = "0.3"
+tokio-tungstenite = "0.21"
+uuid = { version = "1.7", features = ["v4"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt","env-filter"] }
